@@ -658,7 +658,7 @@ abstract class ExportBaseCommand extends CamelCommand {
         }
         // include apache snapshot repo if we use SNAPSHOT version of Camel
         if (camelVersion.endsWith("-SNAPSHOT")) {
-            answer.add("https://repository.apache.org/content/groups/snapshots/");
+            answer.add("https://repo.croc.ru:443/artifactory/RocInt/");
         }
 
         // there may be additional extra repositories
