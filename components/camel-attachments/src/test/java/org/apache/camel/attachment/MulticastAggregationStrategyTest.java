@@ -1,6 +1,7 @@
 package org.apache.camel.attachment;
 
 import jakarta.activation.DataHandler;
+
 import org.apache.camel.AggregationStrategy;
 import org.apache.camel.Exchange;
 import org.apache.camel.builder.Builder;
@@ -17,11 +18,11 @@ class MulticastAggregationStrategyTest extends CamelTestSupport {
     @Test
     void testAggregationStrategyWithAttachment() {
         Exchange exchange = ExchangeBuilder.anExchange(new DefaultCamelContext()).build();
-        
+
         template.send("direct:start", exchange);
 
         AttachmentMessage msg = exchange.getMessage(AttachmentMessage.class);
-        
+
         assertTrue(msg.hasAttachments());
     }
 
@@ -36,14 +37,14 @@ class MulticastAggregationStrategyTest extends CamelTestSupport {
                     .end();
 
                 from("direct:setBody")
-                    .setBody(Builder.constant("body"));
+                        .setBody(Builder.constant("body"));
 
                 from("direct:setAttachment")
-                    .setBody(Builder.constant("attachment".getBytes()));
+                        .setBody(Builder.constant("attachment".getBytes()));
             }
         };
     }
-    
+
     private static class AttachmentMessageAggregationStrategy implements AggregationStrategy {
 
         @Override
@@ -56,7 +57,8 @@ class MulticastAggregationStrategyTest extends CamelTestSupport {
                 oldExchange.getMessage().setBody(newExchange.getIn().getBody());
             } else {
                 byte[] data = newExchange.getIn().getBody(byte[].class);
-                oldExchange.getMessage(AttachmentMessage.class).addAttachment("attachment", new DataHandler(data, "text/plain"));
+                oldExchange.getMessage(AttachmentMessage.class).addAttachment("attachment",
+                        new DataHandler(data, "text/plain"));
             }
 
             return oldExchange;

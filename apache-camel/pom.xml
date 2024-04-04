@@ -41,6 +41,19 @@
         <tarLongFileMode>gnu</tarLongFileMode>
     </properties>
 
+    <distributionManagement>
+        <repository>
+            <id>ri-karavan</id>
+            <name>provider-release</name>
+            <url>https://repo.croc.ru:443/artifactory/RocInt</url>
+        </repository>
+        <snapshotRepository>
+            <id>ri-karavan</id>
+            <name>provider-snapshot</name>
+            <url>https://repo.croc.ru:443/artifactory/RocInt</url>
+        </snapshotRepository>
+    </distributionManagement>
+
     <repositories>
         <repository>
             <id>atlassian</id>

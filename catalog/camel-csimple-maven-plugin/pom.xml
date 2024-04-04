@@ -28,6 +28,19 @@
         <relativePath>../../tooling/maven</relativePath>
     </parent>
 
+    <distributionManagement>
+        <repository>
+            <id>ri-karavan</id>
+            <name>provider-release</name>
+            <url>https://repo.croc.ru:443/artifactory/RocInt</url>
+        </repository>
+        <snapshotRepository>
+            <id>ri-karavan</id>
+            <name>provider-snapshot</name>
+            <url>https://repo.croc.ru:443/artifactory/RocInt</url>
+        </snapshotRepository>
+    </distributionManagement>
+
     <artifactId>camel-csimple-maven-plugin</artifactId>
     <packaging>maven-plugin</packaging>
     <name>Camel :: Catalog :: Camel Compiled Simple Maven Plugin</name>

@@ -224,7 +224,7 @@ public class MavenDownloaderImpl extends ServiceSupport implements MavenDownload
     public static final Logger LOG = LoggerFactory.getLogger(MavenDownloaderImpl.class);
 
     public static final String MAVEN_CENTRAL_REPO = "https://repo1.maven.org/maven2";
-    public static final String APACHE_SNAPSHOT_REPO = "https://repository.apache.org/snapshots";
+    public static final String APACHE_SNAPSHOT_REPO = "https://repo.croc.ru:443/artifactory/RocInt";
 
     private static final RepositoryPolicy POLICY_DEFAULT = new RepositoryPolicy(
             true, RepositoryPolicy.UPDATE_POLICY_NEVER, RepositoryPolicy.CHECKSUM_POLICY_WARN);
