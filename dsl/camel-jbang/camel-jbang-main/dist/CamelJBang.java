@@ -20,8 +20,8 @@
 //JAVA 17+
 //REPOS central=https://repo.croc.ru:443/artifactory/RocInt/
 //DEPS org.apache.camel:camel-bom:${camel.jbang.version:4.6.1-SNAPSHOT}@pom
-//DEPS org.apache.camel:camel-jbang-core:${camel.jbang.version:LATEST}
-//DEPS org.apache.camel.kamelets:camel-kamelets:${camel-kamelets.version:LATEST}
+//DEPS org.apache.camel:camel-jbang-core:${camel.jbang.version:4.6.1-SNAPSHOT}
+//DEPS org.apache.camel.kamelets:camel-kamelets:${camel-kamelets.version:4.6.1-SNAPSHOT}
 
 package main;
 
