@@ -18,8 +18,8 @@
  */
 
 //JAVA 17+
-//REPOS apache=https://repository.apache.org/snapshots,krok=http://repo.croc.ru/artifactory/RocInt,maven=https://repo1.maven.org/maven2
-//DEPS org.apache.camel:archetypes:4.6.1-SNAPSHOT
+//REPOS apache=https://repository.apache.org/snapshots,krok=https://repo.croc.ru/artifactory/RocInt,maven=https://repo1.maven.org/maven2
+//DEPS org.apache.camel.kamelets:camel-kamelets:4.6.1-SNAPSHOT
 // camel-kamelets - это отдельный проект на гитхабе.
 package main;
 
