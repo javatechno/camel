@@ -19,8 +19,9 @@
 
 //JAVA 17+
 //REPOS apache=https://repository.apache.org/snapshots,krok=https://repo.croc.ru:443/artifactory/RocInt,maven=https://repo1.maven.org/maven2
-//DEPS ru.rocint.ri.karavan:keycloak-custom-provider:1.0-SNAPSHOT
-// camel-kamelets - это отдельный проект на гитхабе.
+//DEPS org.apache.camel:camel-bom:${camel.jbang.version:4.6.1-SNAPSHO}@pom
+//DEPS org.apache.camel:camel-jbang-core:${camel.jbang.version:4.6.1-SNAPSHO}
+//DEPS org.apache.camel.kamelets:camel-kamelets:${camel-kamelets.version:4.6.1-SNAPSHOT}
 package main;
 
 import org.apache.camel.dsl.jbang.core.commands.CamelJBangMain;
