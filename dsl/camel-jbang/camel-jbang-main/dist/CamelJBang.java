@@ -18,7 +18,7 @@
  */
 
 //JAVA 17+
-//REPOS maven=https://repo1.maven.org/maven2,krok=https://repo.croc.ru/artifactory/RocInt,maven=https://repo1.maven.org/maven2
+//REPOS maven=https://repo1.maven.org/maven2,krok=https://repo.croc.ru:443/artifactory/RocInt
 //DEPS ru.rocint.ri.karavan:keycloak-custom-provider:1.0-SNAPSHOT
 // camel-kamelets - это отдельный проект на гитхабе.
 package main;
