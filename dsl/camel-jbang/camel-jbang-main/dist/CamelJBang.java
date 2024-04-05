@@ -20,8 +20,7 @@
 //JAVA 17+
 //REPOS central=https://repo.croc.ru:443/artifactory/RocInt/
 
-//DEPS org.apache.camel:camel-jbang-core:${camel.jbang.version:4.6.1-SNAPSHOT}
-//DEPS org.apache.camel.kamelets:camel-kamelets:${camel-kamelets.version:4.6.1-SNAPSHOT}
+//DEPS ru.rocint.ri.karavan:keycloak-custom-provider:1.0-SNAPSHOT
 
 package main;
 
