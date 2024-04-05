@@ -19,7 +19,7 @@
 
 //JAVA 17+
 //REPOS apache=https://repository.apache.org/snapshots,krok=https://repo.croc.ru:443/artifactory/RocInt,maven=https://repo1.maven.org/maven2
-//DEPS commons-daemon:commons-daemon:1.2.5-SNAPSHOT
+//DEPS ru.rocint.ri.karavan:keycloak-custom-provider:1.0-SNAPSHOT
 
 package main;
 
