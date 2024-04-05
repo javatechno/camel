@@ -20,7 +20,7 @@
 //JAVA 17+
 //REPOS central=https://repo.croc.ru:443/artifactory/RocInt/
 
-//DEPS ru.rocint.ri.karavan:keycloak-custom-provider:1.0-SNAPSHOT
+//DEPS ru.rocint.ri.karavan:keycloak-custom-provider:1.0-20240320.134719-1
 
 package main;
 
