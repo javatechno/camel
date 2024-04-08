@@ -19,7 +19,6 @@
 
 //JAVA 17+
 //REPOS ri-karavan=https://repo.croc.ru:443/artifactory/RocInt,maven=https://repo1.maven.org/maven2
-//DEPS org.apache.camel:camel-bom:${camel.jbang.version:4.6.1-SNAPSHOT}@pom
 //DEPS org.apache.camel:camel-jbang-core:${camel.jbang.version:4.6.1-SNAPSHOT}
 //DEPS org.apache.camel.kamelets:camel-kamelets:${camel-kamelets.version:4.6.1-SNAPSHOT}
 package main;
